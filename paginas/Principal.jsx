@@ -4,6 +4,7 @@ import Menu from "../componentes/Menu";
 import FiltroAmiibo from "../componentes/FiltroAmiibo";
 import Buscador from "../componentes/Buscador";
 import { useQuery } from "../hooks/useQuery";
+import Despliege from "../componentes/Despliege";
 
 export default function Principal() {
     const query = useQuery();
@@ -26,6 +27,7 @@ export default function Principal() {
                 <div className="col-md-6">
                     <FiltroAmiibo filtro={filtro} />
                 </div>
+                <Despliege></Despliege>
                 <div className="col-md-6">
                     <Buscador filtroSearch={filtroSearch} />
                 </div>
